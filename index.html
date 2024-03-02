@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia CEG</title>
+    <link rel="stylesheet" href="../Códigos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="../Imagens/favicon.ico" type="image/x-icon" id="favicon">
+</head>
+<body>
+    <menu id="menu">
+        <div>
+            <i class="material-symbols-outlined" onclick="MostMenu()" id="closeButton">close</i>
+            <input type="text" placeholder="Pesquisar">
+            <i class="material-symbols-outlined" id="search">search</i>
+        </div>
+
+        <ul>
+            <li><a class="nav" href="../Códigos/notice.html" target="_blank">Notíciario</a></li>
+            <li><a class="nav" href="#">Sobre</a></li>
+            <li><a class="nav" href="#">Contato</a></li>
+        </ul>
+        <div id="contact">
+            <img id="ig" src="../Imagens/insta_logo.png" alt="Logo do Instagram">
+            <label for="ig"><a href="https://www.instagram.com/doutoradeboraewenne/?e=5ed97fd2-015f-47cf-86c2-122bc6e70fcb&g=5">@deboraewwnne</a></label>
+            <img id="yt" src="../Imagens/yt_logo.png" alt="Logo do Youtube">
+            <label for="yt"><a href="https://l.instagram.com/?u=https%3A%2F%2Fyoutube.com%2F%40canaldosservidores%3Fsi%3DLDwmQfPhLw0KbwOo&e=AT24XqSZyP_icGzij77-h-BQsfYp5n-QPAQqwHe98ZGyiIAR5nI3TtK5dzAe53u50DL8rKcNScObPSZMADZizei0pMppT_ptLjCh7MZxu72Bsci7TUY5NA">canaldosservidores</a></label>
+        </div>
+    </menu>
+    <div id="overlay"></div>
+    <header id="header">
+        <div id="menuBurger">
+            <i class="material-symbols-outlined" onclick="MostMenu()" id="menuIcon">menu</i>
+        </div>
+        <h1>Advocacia CEG</h1>
+        <p>Bem-vindo ao site da Advocacia CEG, onde encontras a informação que precisa sobre o mundo jurídico.</p>
+    </header>
+    <main id="main">
+        <h2>Últimas Notícias</h2>
+        <h3>Ilhabela tem reajuste de 16%</h3>
+    </main>
+    <script>
+        function MostMenu(){
+            var iconeElement = document.getElementById("menuIcon");
+
+            if (menu.style.display == 'none'){
+                menu.style.display = 'block'
+                menuBurger.style.display = 'none'
+                iconeElement.textContent = "close";
+                overlay.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+                menuBurger.style.display = 'block'
+                iconeElement.textContent = "menu";
+                overlay.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
