@@ -65,15 +65,17 @@ li{
     padding: 5px;
     display: flex;
 }
-a.nav{
-    padding: 10px;
+a{
     color: #000000;
     text-decoration: none;
+}
+a.nav{
+    padding: 10px;
     border-radius: 10px;
     width: 50%;
 }
 #contact{
-    font-size: 0.9em;
+    font-size: 0.8em;
 }#contact img{
     width: 32px;
     padding-right: 5px;
